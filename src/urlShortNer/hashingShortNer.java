@@ -40,7 +40,7 @@ public class hashingShortNer {
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '/') {
                 pos = i + 1;
-
+                break;
             }
         }
         String key = shortString(5);
@@ -62,7 +62,7 @@ public class hashingShortNer {
         for (Map.Entry<String, String> e : url.entrySet()) {
             if (e.getKey() == key) {
                 outString.append(e.getValue());
-
+                break;
             }
         }
         System.out.println(outString);
