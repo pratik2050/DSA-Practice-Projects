@@ -35,6 +35,7 @@ public class hashingShortNer {
                     break;
 
                 case 0:
+                    sc.close();
                     break;
             }
         }
