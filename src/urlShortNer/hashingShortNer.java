@@ -20,23 +20,19 @@ public class hashingShortNer {
             sc.nextLine();
 
             switch (choice) {
-                case 1:
-                    System.out.println("Enter Large URL: ");
+                case 1 -> {
+                    System.out.println("Enter Large URL (Without HTTPS): ");
                     String lUrl = sc.next();
-
                     shortNer.Encode(lUrl);
-                    break;
-
-                case 2:
-                    System.out.println("Enter Short URL: ");
-                    String  sUrl = sc.next();
-
+                    System.out.println();
+                }
+                case 2 -> {
+                    System.out.println("Enter Short URL (Without HTTPS): ");
+                    String sUrl = sc.next();
                     System.out.println(shortNer.Decode(sUrl));
-                    break;
-
-                case 0:
-                    sc.close();
-                    break;
+                    System.out.println();
+                }
+                case 0 -> sc.close();
             }
         }
     }

@@ -22,7 +22,6 @@ public class DecodeEncode {
 
     public void Encode(String str) {
         int pos = 0;
-        System.out.println("Enter Url: ");
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '/') {
                 pos = i + 1;
